@@ -81,7 +81,7 @@ const AdminEventDetails = () => {
         //     bgColor="bg-blue-600"
         //     className="hover:bg-blue-700"
         //   />
-        // </div>
+        </div>
 
         {loading ? (
           <div className="text-center py-8">Loading...</div>
