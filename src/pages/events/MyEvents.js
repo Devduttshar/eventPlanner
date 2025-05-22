@@ -40,7 +40,7 @@ const MyEvents = () => {
   };
 
   const handleEdit = (event) => {
-    navigate(`/update-event/${event._id}`, { state: { event } });
+    navigate(`/update-event/${event.eventId}`, { state: { event } });
   };
 
   const formatTime = (time) => {
