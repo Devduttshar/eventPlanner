@@ -74,14 +74,14 @@ const AdminEventDetails = () => {
             size="text-3xl"
             className="font-bold"
           />
-          <CustomButton
-            text="Generate Report"
-            onClick={handleGenerateReport}
-            disabled={loading}
-            bgColor="bg-blue-600"
-            className="hover:bg-blue-700"
-          />
-        </div>
+        //   <CustomButton
+        //     text="Generate Report"
+        //     onClick={handleGenerateReport}
+        //     disabled={loading}
+        //     bgColor="bg-blue-600"
+        //     className="hover:bg-blue-700"
+        //   />
+        // </div>
 
         {loading ? (
           <div className="text-center py-8">Loading...</div>
