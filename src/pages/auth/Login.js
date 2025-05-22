@@ -25,25 +25,18 @@ const Login = () => {
     onSubmit: async (values) => {
       try {
         const response = await login(values);
-        if (response.token) {
+         if (response.token) {
           toast.success('Login successful!', {
             position: "top-right",
-            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
           });
           navigate('/');
         }
       } catch (error) {
         toast.error(error.message || 'Login failed. Please try again.', {
           position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
           closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
         });
       }
     }
